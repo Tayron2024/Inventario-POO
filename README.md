@@ -17,7 +17,7 @@ El siguiente diagrama de clases continen los siguientes requerimientos:
 - Generar reportes sobre el consumo de insumos en un período determinado, permitiendo identificar los más utilizados.
 - Mantener un historial de las entradas y salidas para fines de auditoría y control.
 
-# Diagrama Basado en Gitflow
+# Diagrama con metodologia Gitflow
 ![image](https://github.com/user-attachments/assets/13ed7612-172f-43be-9ebf-4f4409894376)
 
 # Diagrama Visual Paradimg
