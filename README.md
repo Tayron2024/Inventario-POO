@@ -20,3 +20,6 @@ El siguiente diagrama de clases continen los siguientes requerimientos:
 # Diagrama Basado en Gitflow
 ![image](https://github.com/user-attachments/assets/13ed7612-172f-43be-9ebf-4f4409894376)
 
+# Diagrama Visual Paradimg
+![image](https://github.com/user-attachments/assets/c94c8973-5db1-4ee1-bae3-84493bc28cba)
+ 
