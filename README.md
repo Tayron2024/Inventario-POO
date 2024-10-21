@@ -330,7 +330,7 @@ actualizarInventario(): void
 
 **Usuario ↔ Todas las operaciones:** Los usuarios pueden realizar operaciones en el sistema, desde registrar insumos hasta generar reportes.
 
-**Pseudo Codigo*
+**Pseudo Codigo**
 
 **Inicio**
 *Registrar Insumos*
@@ -384,7 +384,9 @@ actualizarInventario(): void
 *Fin*
 
 **Interconexión:** Las clases interactúan de manera eficiente, optimizando la gestión del inventario.
+
 **Categorías y Clasificación:** Las categorías mejoran la organización y el análisis del inventario.
+
 **Usuarios y Roles:** La inclusión de usuarios permite controlar quién puede acceder y modificar información en el sistema.
  
 # Link del Documento
