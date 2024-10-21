@@ -313,43 +313,75 @@ actualizarInventario(): void
 
 
 ## Conexiones realizadas entre clases 
-Insumo ↔ Proveedor: Cada insumo está asociado a un proveedor, permitiendo una gestión clara de las compras.
-Insumo ↔ Categoría: Los insumos se clasifican en categorías para una mejor organización.
-Entrada ↔ Insumo: Cada entrada está vinculada a un insumo.
-Salida ↔ Insumo y Pedido: Las salidas están asociadas a insumos y pedidos, facilitando el seguimiento del uso.
-Pedido ↔ Plato: Cada pedido contiene una lista de platos, cada uno con sus insumos.
-Reporte ↔ Insumo y Usuario: Los reportes pueden generarse sobre el consumo de insumos y son generados por un usuario específico.
-Historial ↔ Entrada y Salida: Se lleva un registro de todas las entradas y salidas.
-Usuario ↔ Todas las operaciones: Los usuarios pueden realizar operaciones en el sistema, desde registrar insumos hasta generar reportes.
+
+**Insumo ↔ Proveedor:** Cada insumo está asociado a un proveedor, permitiendo una gestión clara de las compras.
+
+**Insumo ↔ Categoría:** Los insumos se clasifican en categorías para una mejor organización.
+
+**Entrada ↔ Insumo:** Cada entrada está vinculada a un insumo.
+
+**Salida ↔ Insumo y Pedido:** Las salidas están asociadas a insumos y pedidos, facilitando el seguimiento del uso.
+
+**Pedido ↔ Plato:** Cada pedido contiene una lista de platos, cada uno con sus insumos.
+
+**Reporte ↔ Insumo y Usuario:** Los reportes pueden generarse sobre el consumo de insumos y son generados por un usuario específico.
+
+**Historial ↔ Entrada y Salida:** Se lleva un registro de todas las entradas y salidas.
+
+**Usuario ↔ Todas las operaciones:** Los usuarios pueden realizar operaciones en el sistema, desde registrar insumos hasta generar reportes.
 
 **Pseudo Codigo*
 
 **Inicio**
-Registrar Insumos
-Se crea una instancia de Insumo y se llama a registrarInsumo().
-Gestionar Entradas y Salidas
-Entrada de Insumos
-Se crea una instancia de Entrada y se llama a registrarEntrada().
-Salida de Insumos
-Se crea una instancia de Salida y se llama a registrarSalida().
-Actualizar Inventario
-Se llama a actualizarInventario().
-Se llama a generarAlertas().
-Verificar Vencimientos
-Se llama a verificarVencimiento() en cada Insumo.
-Generar Reportes
-Se crea una instancia de Reporte y se llama a generarReporte() y exportarReporte().
-Historial de Entradas y Salidas
-Se crea una instancia de Historial y se llama a consultarHistorial().
-Gestionar Proveedores
-Se crea una instancia de Proveedor y se llama a registrarProveedor().
-Gestionar Categorías
-Se crea una instancia de Categoría y se llama a registrarCategoria().
-Gestionar Pedidos
-Se crea una instancia de Pedido y se llama a realizarPedido().
-Gestionar Usuarios
-Se crea una instancia de Usuario y se llama a registrarUsuario().
-Fin
+*Registrar Insumos*
+
+*Se crea una instancia de Insumo y se llama a registrarInsumo().*
+
+*Gestion de Inventario*
+
+*Entrada de Insumos*
+
+*Se crea una instancia de Entrada y se llama a registrarEntrada().*
+
+*Salida de Insumos*
+
+*Se crea una instancia de Salida y se llama a registrarSalida().*
+
+*Actualizar Inventario*
+
+*Se llama a actualizarInventario().*
+
+*Se llama a generarAlertas().*
+
+*Verificar Vencimientos*
+
+*Se llama a verificarVencimiento() en cada Insumo.*
+
+*Generar Reportes*
+
+*Se crea una instancia de Reporte y se llama a generarReporte() y exportarReporte().*
+
+*Historial de Entradas y Salidas*
+
+*Se crea una instancia de Historial y se llama a consultarHistorial().*
+
+*Gestionar Proveedores*
+
+*Se crea una instancia de Proveedor y se llama a registrarProveedor().*
+
+*Gestionar Categorías*
+
+*Se crea una instancia de Categoría y se llama a registrarCategoria().*
+
+*Gestionar Pedidos*
+
+*Se crea una instancia de Pedido y se llama a realizarPedido().*
+
+*Gestionar Usuarios*
+
+*Se crea una instancia de Usuario y se llama a registrarUsuario().*
+
+*Fin*
 
 **Interconexión:** Las clases interactúan de manera eficiente, optimizando la gestión del inventario.
 **Categorías y Clasificación:** Las categorías mejoran la organización y el análisis del inventario.
