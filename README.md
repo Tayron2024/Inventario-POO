@@ -4,10 +4,15 @@ Este repositorio contiene el Diagrama de clase sobre el Módulo de Invetario de 
 Ing. Edison Coronel.
 # Los integrantes del grupo son: 
 - Tayron Morales.
-- Mathias Medina. 
+  tayron.morales@unl.edu.ec
+- Mathias Medina.
+  mathias.medina@unl.edu.ec
 - Santiago Villamagua.
+  santiago.villamagua@unl.edu.ec
 - Leonardo Sánchez.
+  leonardo.sanchez@unl.edu.ec
 - Luis Blacio.
+  luis.blacio@unl.edu.ec
 # Descripción 
 El siguiente diagrama de clases continen los siguientes requerimientos:
 - Registrar todos los insumos del restaurante, con información como nombre, cantidad, unidad de medida y nivel de reorden.
@@ -24,7 +29,6 @@ El siguiente diagrama de clases continen los siguientes requerimientos:
 **Link del diagrama para ver más claro**
 
 https://drive.google.com/file/d/10IeCt2Xld8nPt5jeL-ac2Uvd9UMeTvwy/view?usp=sharing
-
 
 # Analisis del Diagrama
 
