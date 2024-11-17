@@ -19,9 +19,14 @@ El siguiente diagrama de clases continen los siguientes requerimientos:
 
 
 # Diagrama Visual Paradimg
-![image](https://github.com/user-attachments/assets/c94c8973-5db1-4ee1-bae3-84493bc28cba)
+![POO3](https://github.com/user-attachments/assets/e5f33a57-ef34-4768-a9cc-b1ecc1a8a727)
 
-#Analisis del Diagrama
+**Link del diagrama para ver más claro**
+
+https://drive.google.com/file/d/10IeCt2Xld8nPt5jeL-ac2Uvd9UMeTvwy/view?usp=sharing
+
+
+# Analisis del Diagrama
 
 # Módulo de Inventario para Restaurante
 ## Descripción General
