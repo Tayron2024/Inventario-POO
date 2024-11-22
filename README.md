@@ -24,7 +24,8 @@ El siguiente diagrama de clases continen los siguientes requerimientos:
 
 
 # Diagrama Visual Paradimg
-![POO3](https://github.com/user-attachments/assets/e5f33a57-ef34-4768-a9cc-b1ecc1a8a727)
+![Captura de pantalla 2024-11-21 213015](https://github.com/user-attachments/assets/e8113c6d-b760-4493-b9f2-54d6f97a42c2)
+
 
 **Link del diagrama para ver más claro**
 
