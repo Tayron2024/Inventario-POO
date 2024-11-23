@@ -399,6 +399,6 @@ actualizarInventario(): void
 
 **Usuarios y Roles:** La inclusión de usuarios permite controlar quién puede acceder y modificar información en el sistema.
  
-# Link del Documento
+# Link del Código
 
 https://github.com/Tayron2024/Inventario-POO/blob/main/InventarioPOO/src/main.java
