@@ -24,13 +24,14 @@ El siguiente diagrama de clases continen los siguientes requerimientos:
 
 
 # Diagrama Visual Paradimg
-![Captura de pantalla 2024-11-21 213335](https://github.com/user-attachments/assets/dec8655e-4803-43f7-89bd-dd20b731280b)
+![Captura de pantalla 2024-11-22 225503](https://github.com/user-attachments/assets/eb66e09f-3d3d-4f92-9171-7381a9f78394)
+
 
 
 
 **Link del diagrama para ver más claro**
 
-https://drive.google.com/file/d/10IeCt2Xld8nPt5jeL-ac2Uvd9UMeTvwy/view?usp=sharing
+https://drive.google.com/file/d/18Kq8SLEKILQhCcDv8P9eVicaKOjdHkyM/view?usp=sharing
 
 # Analisis del Diagrama
 
