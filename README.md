@@ -400,4 +400,4 @@ actualizarInventario(): void
 **Usuarios y Roles:** La inclusión de usuarios permite controlar quién puede acceder y modificar información en el sistema.
  
 # Link del Documento
-https://github.com/Tayron2024/Inventario-POO/blob/main/POO.pdf 
+
