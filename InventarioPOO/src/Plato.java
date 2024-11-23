@@ -3,18 +3,18 @@ public class Plato {
     private String nombre;
     private String descripcion;
     private double precio;
-    private boolean disponible; // Indica si el plato está disponible
+    private boolean disponible; 
 
-    // Constructor
+    
     public Plato(int id, String nombre, String descripcion, double precio) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
-        this.disponible = true; // Inicialmente, el plato está disponible
+        this.disponible = true; 
     }
 
-    // Getters y Setters
+    
 
 
 
@@ -43,7 +43,7 @@ public class Plato {
         this.disponible = disponible;
     }
 
-    // Método para mostrar la información del plato
+    
     public String mostrarPlato() {
         return "ID: " + id + ", Nombre: " + nombre + ", Descripción: " + descripcion + ", Precio: $" + precio + ", Disponible: " + disponible;
     }
