@@ -344,7 +344,7 @@ El diseño basado en relaciones claras y encapsulación permite agregar nuevas f
 
 ## CAMBIOS RELAIZADOS
 
-**1. NUEVAS CALSES:**
+**1. NUEVAS CLASES:**
 
 -*Operación* : Unifica las transacciones de entrada y salida con atributos como fechaRegistro, cantidad, costoTotal, y motivoSalida.
 
@@ -475,6 +475,7 @@ https://github.com/Tayron2024/Inventario-POO/blob/main/InventarioPOO/src/main.ja
 
 # Explicación del código
 
-El código se originó después de elaborar el diagrama UML en Visual Paradigm, con ello se pudo codificar en la herramienta IntelliJ IDEA siempre y cuando el diagrama este sin errores.
+El código se originó después de elaborar el diagrama UML en Visual Paradigm, con ello se pudo codificar en la herramienta IntelliJ IDEA siempre y cuando el diagrama este sin errores. Con todo eso se puede empesar a codificar todas las clases en IntelliJ, desde interfaces a enumeraciones.
+Al tener ya el código de todas las clases se empieza a ver los errores en el main, esto se debe solucionar hasta lograr que el código en general compile. Cuando todo este sin errores la campilación fue un exito
 
 
