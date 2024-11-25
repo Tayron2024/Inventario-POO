@@ -4,10 +4,15 @@ Este repositorio contiene el Diagrama de clase sobre el Módulo de Invetario de 
 Ing. Edison Coronel.
 # Los integrantes del grupo son: 
 - Tayron Morales.
+  tayron.morales@unl.edu.ec
 - Mathias Medina. 
+  mathias.medina@unl.edu.ec
 - Santiago Villamagua.
+  santiago.villamagua@unl.edu.ec
 - Leonardo Sánchez.
+  leonardo.sanchez@unl.edu.ec
 - Luis Blacio.
+  luis.blacio@unl.edu.ec
 # Descripción 
 El siguiente diagrama de clases continen los siguientes requerimientos:
 - Registrar todos los insumos del restaurante, con información como nombre, cantidad, unidad de medida y nivel de reorden.
@@ -17,13 +22,18 @@ El siguiente diagrama de clases continen los siguientes requerimientos:
 - Generar reportes sobre el consumo de insumos en un período determinado, permitiendo identificar los más utilizados.
 - Mantener un historial de las entradas y salidas para fines de auditoría y control.
 
-# Diagrama con metodologia Gitflow
-![image](https://github.com/user-attachments/assets/13ed7612-172f-43be-9ebf-4f4409894376)
 
 # Diagrama Visual Paradimg
-![image](https://github.com/user-attachments/assets/c94c8973-5db1-4ee1-bae3-84493bc28cba)
+![Captura de pantalla 2024-11-22 225503](https://github.com/user-attachments/assets/eb66e09f-3d3d-4f92-9171-7381a9f78394)
 
-#Analisis del Diagrama
+
+
+
+**Link del diagrama para ver más claro**
+
+https://drive.google.com/file/d/18Kq8SLEKILQhCcDv8P9eVicaKOjdHkyM/view?usp=sharing
+
+# Analisis del Diagrama
 
 # Módulo de Inventario para Restaurante
 ## Descripción General
@@ -389,5 +399,10 @@ actualizarInventario(): void
 
 **Usuarios y Roles:** La inclusión de usuarios permite controlar quién puede acceder y modificar información en el sistema.
  
-# Link del Documento
-https://github.com/Tayron2024/Inventario-POO/blob/main/POO.pdf 
+# Link del Código
+
+https://github.com/Tayron2024/Inventario-POO/blob/main/InventarioPOO/src/main.java
+
+# Explicación del código
+
+El código se originó después de elaborar el diagrama UML en Visual Paradigm, con ello se pudo codificar en la herramienta IntelliJ IDEA siempre y cuando el diagrama este sin errores.
