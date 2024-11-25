@@ -5,7 +5,7 @@ Ing. Edison Coronel.
 # Los integrantes del grupo son: 
 - Tayron Morales.
   tayron.morales@unl.edu.ec
-- Mathias Medina.
+- Mathias Medina. 
   mathias.medina@unl.edu.ec
 - Santiago Villamagua.
   santiago.villamagua@unl.edu.ec
@@ -402,3 +402,9 @@ actualizarInventario(): void
 # Link del Código
 
 https://github.com/Tayron2024/Inventario-POO/blob/main/InventarioPOO/src/main.java
+
+# Explicación del código
+
+El código se originó después de elaborar el diagrama UML en Visual Paradigm, con ello se pudo codificar en la herramienta IntelliJ IDEA siempre y cuando el diagrama este sin errores.
+
+
