@@ -23,15 +23,15 @@ El siguiente diagrama de clases continen los siguientes requerimientos:
 - Mantener un historial de las entradas y salidas para fines de auditoría y control.
 
 
-# Diagrama Visual Paradimg
-![Captura de pantalla 2024-11-22 225503](https://github.com/user-attachments/assets/eb66e09f-3d3d-4f92-9171-7381a9f78394)
+# Diagrama Visual Paradimg 
 
 
 
 
 **Link del diagrama para ver más claro**
 
-https://drive.google.com/file/d/18Kq8SLEKILQhCcDv8P9eVicaKOjdHkyM/view?usp=sharing
+[https://drive.google.com/file/d/18Kq8SLEKILQhCcDv8P9eVicaKOjdHkyM/view?usp=sharing](https://drive.google.com/file/d/1wfMxD3OUQ34B9QFpzEsLgm_LE8zuqh4E/view?usp=sharing)
+
 
 # Analisis del Diagrama
 
@@ -40,6 +40,8 @@ https://drive.google.com/file/d/18Kq8SLEKILQhCcDv8P9eVicaKOjdHkyM/view?usp=shari
 El módulo de inventario gestiona los insumos y productos necesarios para la preparación de platos en un restaurante, incorporando funcionalidades avanzadas para optimizar el seguimiento y control del inventario.
 
 ## Clases y Módulos Detallados
+
+                                      
 **1.Clase Insumo**
 **Atributos:**
 
@@ -53,13 +55,11 @@ unidadMedida: Unidad de medida (kg, litros, unidades, etc.).
 
 nivelReorden: Cantidad mínima para activar una alerta de reorden.
 
-proveedor: Referencia a la clase Proveedor.
-
 fechaVencimiento: Fecha de caducidad del insumo.
 
-categoría: Referencia a la clase Categoría.
-
 precioUnitario: Precio por unidad del insumo.
+
+ubicacion: ubicacion del producto en el almacen
 
 **Métodos:**
 
@@ -72,59 +72,10 @@ verificarReorden()
 verificarVencimiento()
 
 
-**2. Clase Entrada**
+**2. Clase Inventario**
 **Atributos:**
 
-id: Identificador único de la entrada.
-
-insumo: Referencia a Insumo.
-
-cantidad: Cantidad recibida.
-
-fechaRegistro: Fecha de registro.
-
-proveedor: Referencia a Proveedor.
-
-costoTotal: Costo total de la entrada.
-
-**Métodos:**
-
-registrarEntrada()
-
-obtenerHistorial()
-
-
-**3. Clase Salida**
-**Atributos:**
-
-id: Identificador único de la salida.
-
-insumo: Referencia a Insumo.
-
-cantidad: Cantidad utilizada.
-
-fechaUso: Fecha de uso.
-
-pedido: Referencia a Pedido.
-
-motivo: Motivo de la salida (uso, desperdicio, etc.).
-
-
-**Métodos:**
-
-registrarSalida()
-
-obtenerHistorial()
-
-
-**4. Clase Inventario**
-**Atributos:**
-
-listaInsumos: Lista de insumos.
-
-listaCategorías: Lista de categorías.
-
-listaProveedores: Lista de proveedores.
+almacenamiento: almacen donde se guardan los insumos
 
 
 **Métodos:**
@@ -133,8 +84,6 @@ agregarInsumo(insumo)
 
 eliminarInsumo(insumo)
 
-buscarInsumo(nombre)
-
 actualizarInventario()
 
 generarAlertas()
@@ -142,16 +91,14 @@ generarAlertas()
 obtenerValorTotalInventario(): Calcula el valor total de los insumos en inventario.
 
 
-**5. Clase Alerta**
+**3. Clase Alerta**
 **Atributos:**
-
-insumo: Referencia a Insumo.
 
 mensaje: Mensaje de alerta.
 
 fecha: Fecha de alerta.
 
-tipoAlerta: Tipo de alerta (bajo stock, vencimiento).
+tipo: Tipo de alerta (bajo stock, vencimiento).
 
 
 **Métodos:**
@@ -160,17 +107,29 @@ generarAlerta()
 
 enviarNotificacion()
 
+**4. Clase Administrador**
+**Atributos**
 
-**6. Clase Reporte**
+revision: revision de bodega 
+
+control: control de cantidad de insumos en inventario
+
+**Metodos**
+
+crearReporte():
+
+
+
+**5. Clase ReporteConsumo**
 **Atributos:**
 
-tipoReporte: Tipo de reporte.
+tipo: Tipo de reporte.
 
-periodo: Período de tiempo.
+periodoInicio: Fecha de inicio.
+
+periodoFin: Fecha de fin.
 
 datos: Datos del reporte.
-
-generador: Referencia a la clase Usuario que generó el reporte.
 
 **Métodos:**
 
@@ -179,14 +138,39 @@ generarReporte()
 exportarReporte()
 
 
-**7. Clase Historial**
+**6. ReporteBodega**
 **Atributos:**
 
-listaEntradas: Lista de entradas.
+datos: reporte del inventario
 
-listaSalidas: Lista de salidas.
+tipo: tipo de insumo 
 
-fechaConsulta: Fecha de consulta.
+**Metodos:**
+
+generarReporte():
+
+actualizarReporte():
+
+**7. Bodega**
+**Atributos**
+
+cantidadUtileria: Cantidad de utileria disponible.
+
+cantidadCondimentos: Cantidad de condimentos disponibles.
+
+cantidadVerduras: Cantidad de verduras disponibles.
+
+cantidadCarnes: Cantidad de carnes disponibles.
+
+
+**Metodos**
+*Ninguno especificado*
+
+
+**8. Clase Historial**
+**Atributos:**
+
+actualizacion: de Insumo, ReporteConsumo, ReporteBodega
 
 **Métodos:**
 
@@ -197,40 +181,29 @@ registrarSalida(salida)
 consultarHistorial()
 
 
-**8. Clase Proveedor**
+**9. Clase Proveedor**
 **Atributos:**
-
-id: Identificador único.
-
-nombre: Nombre del proveedor.
-
-contacto: Nombre del contacto.
-
-telefono: Número de teléfono.
 
 email: Correo electrónico.
 
 direccion: Dirección del proveedor.
 
-calificacion: Calificación del proveedor basada en evaluaciones.
+contacto: Nombre del contacto.
+
 
 **Métodos:**
 
 registrarProveedor()
 
-actualizarProveedor()
-
 consultarProveedores()
 
+actualizarProveedor()
 
-**9. Clase Pedido**
+
+**10. Clase Pedido**
 **Atributos:**
 
-id: Identificador único.
-
 cliente: Información del cliente.
-
-listaPlatos: Lista de platos.
 
 fecha: Fecha del pedido.
 
@@ -242,35 +215,10 @@ realizarPedido()
 
 cancelarPedido()
 
-agregarPlato(plato)
-
-
-**10. Clase Plato**
-**Atributos:**
-
-id: Identificador único.
-
-nombre: Nombre del plato.
-
-listaInsumos: Lista de insumos necesarios.
-
-precio: Precio del plato.
-
-**Métodos:**
-
-crearPlato()
-
-actualizarPlato()
-
-calcularCostoPlato(): Calcula el costo basado en los insumos.
-
-
 
 **11. Clase Categoría**
 *Descripción: Permite clasificar los insumos en categorías, facilitando la gestión del inventario.*
 **Atributos:**
-
-id: Identificador único.
 
 nombre: Nombre de la categoría.
 
@@ -289,8 +237,6 @@ consultarCategorias()
 *Descripción: Representa a los usuarios del sistema que gestionan el inventario.*
 **Atributos:**
 
-id: Identificador único del usuario.
-
 nombre: Nombre del usuario.
 
 rol: Rol del usuario (administrador, empleado, etc.).
@@ -306,12 +252,12 @@ actualizarUsuario()
 consultarUsuarios()
 
 
-**13. Clase gestionInvetario**
+**13. Clase GestionInvetario**
 **Atributos:**
 
 *Ninguna Especificada*
 
-**Metodos:**
+**Métodos:**
 
 agregarItem(ItemInventario item)
 
@@ -319,7 +265,83 @@ eliminarItem(ItemInventario item)
 
 buscarItem(String nombre)
 
-actualizarInventario(): void
+actualizar(): void
+
+
+**14. Clase Producto** 
+**Atributos**
+
+nombre: Nombre del producto
+
+precio: precio del Producto
+
+**Métodos**
+
+crearPlato():
+
+actualizarPlato():
+
+calcularCosto():
+
+
+**15. Clase Persona**
+**Atributos**
+
+edad: Edad de la persona
+
+nombre : Nombre de la persona.
+
+apellido: Apellido de la persona.
+
+**Métodos**
+
+*no cuenta con metodos especificados*
+
+**16. Clase Operacion**
+
+fechaRegistro: fecha y hora en que se realiza la operación
+
+cantidad: indica la canridad de insumos involucrados
+
+costoTotal: Costo total relacionado con la operación.
+
+motivoSalida: Especifica la razón de la operacion(salida de insumos).
+
+## Reflexiones
+
+**1. ABSTRACCION DE INVENTARIO**
+En el diseño UML del módulo de "INVENTARIO", la abstracción se utiliza para representar conceptos clave de gestión de inventario y operaciones en un restaurante. Las clases como Inventario, Insumo, Producto y Pedido abstraen componentes esenciales del negocio, proporcionando una interfaz clara con métodos que reflejan las acciones que se pueden realizar en el sistema. Por ejemplo, Insumo encapsulo atributos como "cantidadDisponible " , "unidadMedida" y "fechaVencimiento, ofreciendo métodos como "actualizarCantidad" o "verificarVencimiento" para manipular estos datos de manera lógica. Esto permitió que el diseño se centrara en kos conportamientos relevantes sin incluir detalles de inplementación innescesarios en esta etapa.
+
+**2.ENACPSULACION DE INVENTARIO**
+
+La encapsulación se implementó al proteger los datos sensibles de cada clase y proporcionar acceso controlado mediante métodos públicos. Por ejemplo, la clase Inventario adminitra sus datos internos relacionados con bodega e insumos y exponen métodos como "agregarInsumo" y "obtenerValorTotalInventario". Así, los datos como la lista de insumos se mantienen privados y se modifican únicamente a través de métodos específicos que aseguran la integridad de la información. este enfoque minimiza el riesgo de acceso indebido o modificaciones incorrectas de los datos.
+
+**3. HERENCIA DE INVENTARIO**
+Se incluye herencia para represenatr relaciones entre entidades. Por ejemplo, la clase "Usuario" extiende de la clase "Persona", lo que evita redundancias al reutilizar atributos comunes como "nombre", "apellido" y "email". De forma similar, otras entidades podrían haber heredado funcionalidades comunes si el sistema crece en complejidad. Este diseño favorece la extensibilidad, ya que facilita la creación de nuevas clases que cokmparten características comunes conlas clases existentes.
+
+
+**4. POLIMORFISMO**
+
+Se puede evidenciar el uso del POLIMORFISMO en el uso de interfaces y métodos compartidos. Por ejemplo, la interfaz "GestionInventario" declara métodos como "agregarItem", "eliminarItem" y "buscarItem", los cuales pueden ser implementados por diferentes clases, permitiendo que cada clase maneje estas operaciones de acuerdo a su lógica específica. De la misma manera, el uso de métodos como "generarReporte" en clases como ReporteConsumo y ReporteBodega muestra cómo una misma acción puede tener diferentes implementaciones dependiendo del contexto.
+
+**DESICIONES DE DISEÑO PARA INVENTARIO**
+
+**1.Centralizacion del inventario:** 
+
+La clase "Inventario" actúa como punto de control principal para gestionar "Insumo" y "Bodega". Esto asegura que las operaciones relacionadas con el inventario estén organizadas y centralizadas, evitando la duplicación de responsabilidades.
+
+**2.SEPARACIÓN DE RESPONSABILIDADES:**  
+
+Clases como "Historial" y "Operacionse" encargan de aspectos específicos del manejo de entradas y salidas, manteniendo el principio de responsabilidad única. Esto facilita el mantenimiento y evolución del sistema.
+
+**3. REPORTES PERSONALIZABLES:** 
+
+Al crear clases independientes para reportes ( "ReporteConsumo" y "ReporteBodega"), se permite manejar diferentes tipos de información sin mezclar  responsabilidades.
+
+**4. ESCABILIDAD:**
+El diseño basado en relaciones claras y encapsulación permite agregar nuevas funcionalidades, como incluir un sistema más complejo de pedidos o integrar análisis de consumo, sin afectar las partes existentes del sistema.
+
+
 
 
 ## Conexiones realizadas entre clases 
