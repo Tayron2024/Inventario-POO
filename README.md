@@ -342,6 +342,54 @@ Al crear clases independientes para reportes ( "ReporteConsumo" y "ReporteBodega
 El diseño basado en relaciones claras y encapsulación permite agregar nuevas funcionalidades, como incluir un sistema más complejo de pedidos o integrar análisis de consumo, sin afectar las partes existentes del sistema.
 
 
+## CAMBIOS RELAIZADOS
+
+**1. NUEVAS CALSES:**
+
+-*Operación* : Unifica las transacciones de entrada y salida con atributos como fechaRegistro, cantidad, costoTotal, y motivoSalida.
+
+-*ReporteConsumo y ReporteBodega* : Especializan los reportes según el área.
+
+-*Bodega* : Permite la gestión por ubicaciones físicas de los insumos.
+
+-*Historial* : Centraliza el registro de transacciones en vez de manejar listas separadas de entradas y salidas.
+
+**2. CAMBIOS EN INSUMO:**
+
+-*Nuevos métodos*: actualizarCantidad(float Cantidad) y verificarVencimiento().
+
+-Introducción del atributo ubicación.
+
+**3. CAMBIOS EN GESTION DEL INVENTARIO**
+
+-Inventariose relaciona con Bodegapara gestionar múltiples ubicaciones físicas.
+
+-Se agregó el método generarAlertas() conectado con la clase Alerta.
+
+**4. ESTRUCTURA DE LOS INFORMES:**
+
+- *Clases específicas*( ReporteConsumoy ReporteBodega) con métodos especializados.
+
+**5. USUARIO Y PERSONA:**
+
+- La clase Usuariohereda de Persona, reutilizando atributos comunes como nombrey email.
+
+**6. HISTORIAL:**
+
+Centraliza las transacciones utilizando la clase Operación, para mejorar el manejo de transacciones.
+
+**7. PEDIDO:**
+
+Relacionadamente limpia Pedido con Producto para reflejar que un pedido contiene productos específicos.
+
+**8. MEJORAS EN ALERTA:**
+
+Se conecta Alerta directamente con Inventario, automatizando la generación de notificaciones.
+
+**9. MODULARIDAD Y POLIMORFISMO:**
+
+Métodos como generarReporte() en distintas clases ( ReporteConsumo, ReporteBodega) implementan polimorfismo.
+
 
 
 ## Conexiones realizadas entre clases 
