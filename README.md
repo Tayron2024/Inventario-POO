@@ -25,7 +25,7 @@ El siguiente diagrama de clases continen los siguientes requerimientos:
 
 # Diagrama Visual Paradimg 
 
-
+![](https://github.com/Tayron2024/Inventario-POO/blob/main/Captura%20de%20pantalla%202024-11-24%20235152.png)
 
 
 **Link del diagrama para ver más claro**
