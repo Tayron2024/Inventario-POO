@@ -25,12 +25,13 @@ El siguiente diagrama de clases continen los siguientes requerimientos:
 
 # Diagrama Visual Paradimg 
 
-![](https://github.com/Tayron2024/Inventario-POO/blob/main/Captura%20de%20pantalla%202024-11-24%20235152.png)
+![Captura de pantalla 2024-11-26 090338](https://github.com/user-attachments/assets/c7749dbe-1b60-4093-b966-77a0b0499ded)
+
 
 
 **Link del diagrama para ver más claro**
 
-[https://drive.google.com/file/d/18Kq8SLEKILQhCcDv8P9eVicaKOjdHkyM/view?usp=sharing](https://drive.google.com/file/d/1wfMxD3OUQ34B9QFpzEsLgm_LE8zuqh4E/view?usp=sharing)
+https://drive.google.com/file/d/1WnKVkikT2FHkUT9_u0Pv7kQjc8qsrlUT/view?usp=sharing
 
 
 # Analisis del Diagrama
