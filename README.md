@@ -472,7 +472,7 @@ Métodos como generarReporte() en distintas clases ( ReporteConsumo, ReporteBode
  
 # Link del Código
 
-https://github.com/Tayron2024/Inventario-POO/blob/main/InventarioPOO/src/main.java
+https://github.com/Tayron2024/Inventario-POO/tree/main/src
 
 # Explicación del código
 
